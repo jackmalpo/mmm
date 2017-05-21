@@ -8,9 +8,7 @@
       Finally! A safe way to remove hungarian notation from your application
     ]]></description>
 
-  <change-notes><![CDATA[
-
-    ]]>
+  <change-notes>
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
@@ -27,7 +25,10 @@
   </extensions>
 
   <actions>
-    <!-- Add your actions here -->
+    <group id="Malpo" text="Mmm" description="Remove Hungarian">
+      <add-to-group group-id="RefactoringMenu" anchor="last"  />
+      <action id="Mmm" class="com.malpo.mmm.RemoveHungarianAction" text="Do the thing" description="The thing is done" />
+    </group>
   </actions>
 
 </idea-plugin>
